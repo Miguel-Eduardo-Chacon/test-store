@@ -17656,6 +17656,22 @@ body:not(.has-sticky) .bnr-sticky
 }
 
 /*  8. Product and Category Page  */
+/*  8.0. Product Custom Section*/
+.hoverable-cartegories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    column-gap: 8px;
+}
+.hoverable-cartegories .hoverable-category-card{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    filter:  invert(0);
+    transition: filter 250ms linear;
+}
+.hoverable-cartegories .hoverable-category-card:hover{
+    filter: invert(1);
+}
 /*  8.1. Product Card  */
 .prd-carousel-menu
 {
